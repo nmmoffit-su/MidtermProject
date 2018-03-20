@@ -87,7 +87,7 @@ padding: 10px;
 
 footer{
     color: #fff;
-    background-color: #BB7279;
+    background-color: #3A1772;
     border-radius: 5px;
     margin-bottom: 20px;
     font-family: "Questrial", sans-serif;
@@ -139,6 +139,12 @@ footer{
     margin: 5px;
 }
 
+.hometown{
+    font-size: 1.8em;
+    padding: 5px;
+    margin: 5px;    
+}
+
 .aboutmetext{
     background-color: #F6DF97;
 }
@@ -147,6 +153,11 @@ footer{
     background-color: #BB7279;
     border-radius: 5px;
     color: #fff;
+    font-family: 'Anton', sans-serif;
+}
+
+.heading h2{
+    animation: headerSlide 3s linear 0s alternate infinite;
 }
 
 @media screen and (max-width: 767px){
@@ -160,6 +171,33 @@ footer{
     .aboutmepic{
         display: flex;
         justify-content: center;
+    }
+    .heading h2{
+        animation: headerSlide 0s linear 0s alternate infinite;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .aboutmepic{
+        display: flex;
+        justify-content: center;
+    }
+
+    .row .emails{
+        padding-left: 15%;
+    }
+
+    .aboutme{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .references{
+        display: flex;
+        justify-content: center;
+    }
+    .heading h2{
+        animation: headerSlide 0s linear 0s alternate infinite;
     }
 }
 
@@ -189,4 +227,42 @@ footer{
 
 .fa{
     transition: all .5s ease-in-out;
+  }
+
+.card{
+    border-radius: 6px;
+  }
+
+  .reference1{
+     border-radius: 50%;
+     max-width: 194px;
+     min-height: 193px;
+     max-height: 193px;
+  }
+
+  .reference2{
+      max-height:202px;
+      border-radius: 50%; 
+  }
+
+  .card{
+      margin:0!important;
+  }
+
+  .btnword:hover{
+      text-decoration: none;
+      color: #fff;
+  }
+
+  @keyframes headerSlide{
+      0%{transform: translateX(0);}
+      100%{transform: translateX(70%);}
+  }
+
+  .navbar-toggler{
+      background-color: #fff;
+  }
+
+  .navbar-toggler-icon{
+      background-color: #3A1772;
   }
