@@ -1,0 +1,268 @@
+nav{
+    background-color: #3A1772;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2em;
+}
+
+body{
+    font-family: 'Questrial', sans-serif;
+    background-color: #EFE9E7;
+}
+
+nav{
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+.navbar-brand{
+    font-size: 1.4em;
+    color: #fff;
+}
+
+nav a {    
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: background-color .5s;
+}
+
+li a:hover{
+    color: #fff;
+}
+
+nav li a::after{
+    content:"";
+    display:block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position:absolute;
+    bottom: 5px;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+}    
+li a:hover::after {
+    transform: scaleX(1);
+}
+
+.centered {
+    position: absolute;
+    font-size: 3em;
+    font-family: "Questrial", sans-serif;
+    color: #fff;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.info h2{
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    margin: 0 0 24px 0; 
+    text-align: center;
+}
+
+.info{
+    font-family: 'Questrial', sans-serif;
+    padding: 60px;
+}
+
+.info-item{
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding: 10px;
+}
+
+.row i{
+   font-size: 3em;
+   padding: 10px;
+}
+
+footer{
+    color: #fff;
+    background-color: #3A1772;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: "Questrial", sans-serif;
+}
+
+.elinks{
+    padding: 15px;
+    flex-wrap: nowrap;
+}
+
+.external .link{
+    text-decoration: none;
+}
+
+.external .link a{
+    color: #fff;
+}
+
+.infolink{
+    text-decoration: none;
+    color: #000;
+}
+
+.infolink:hover{
+    color: #000
+}
+
+.profile{
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+}
+
+.emails{
+    font-size: 1.8em;
+    padding: 5px;
+    margin: 5px;
+}
+
+.phone{
+    font-size: 1.8em;
+    padding: 5px;
+    margin: 5px;
+}
+
+.address{
+    font-size: 1.8em;
+    padding: 5px;
+    margin: 5px;
+}
+
+.hometown{
+    font-size: 1.8em;
+    padding: 5px;
+    margin: 5px;    
+}
+
+.aboutmetext{
+    background-color: #F6DF97;
+}
+
+.heading{
+    background-color: #BB7279;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+}
+
+.heading h2{
+    animation: headerSlide 3s linear 0s alternate infinite;
+}
+
+@media screen and (max-width: 767px){
+    .e-links{
+        text-align: center;
+    }
+    .external{
+        padding: 0!important;
+        margin-bottom: 10px!important;
+    }
+    .aboutmepic{
+        display: flex;
+        justify-content: center;
+    }
+    .heading h2{
+        animation: headerSlide 0s linear 0s alternate infinite;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .aboutmepic{
+        display: flex;
+        justify-content: center;
+    }
+
+    .row .emails{
+        padding-left: 15%;
+    }
+
+    .aboutme{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .references{
+        display: flex;
+        justify-content: center;
+    }
+    .heading h2{
+        animation: headerSlide 0s linear 0s alternate infinite;
+    }
+}
+
+.cuselink{
+    text-decoration: none;
+    color: #000;
+}
+
+.hslink{
+    text-decoration: none;
+    color: #000;
+}
+
+.education{
+    background-color: #F6DF97;
+}
+
+.external{
+    list-style-type: none;
+}
+
+.fa:hover{
+    font-size: 4em;
+    transform: scaleX(1);
+    transition-duration: .5s;
+}
+
+.fa{
+    transition: all .5s ease-in-out;
+  }
+
+.card{
+    border-radius: 6px;
+  }
+
+  .reference1{
+     border-radius: 50%;
+     max-width: 194px;
+     min-height: 193px;
+     max-height: 193px;
+  }
+
+  .reference2{
+      max-height:202px;
+      border-radius: 50%; 
+  }
+
+  .card{
+      margin:0!important;
+  }
+
+  .btnword:hover{
+      text-decoration: none;
+      color: #fff;
+  }
+
+  @keyframes headerSlide{
+      0%{transform: translateX(0);}
+      100%{transform: translateX(70%);}
+  }
+
+  .navbar-toggler{
+      background-color: #fff;
+  }
+
+  .navbar-toggler-icon{
+      background-color: #3A1772;
+  }
